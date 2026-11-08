@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<title>Data Manipulation</title>
+</head>
+
+<body>
+        <p id="date"></p>
+        <nav>
+        <a href="index.html">Welcome</a>
+        <a href="data.html">Data Manipulation</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <form id="searchForm">
+        <div class="form-row">
+            <label for="searchName">Pokémon Name</label>
+            <input type="text" name="searchName" id="searchName" required>
+        </div>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="container">
+        <table></table>
+
+    <button id="toggle">Add a Pokémon</button>
+    <dialog id="addPokemonDialog">
+
+        <header class="modal_title">
+            <h1> Add a Pokémon </h1>
+            <button type="button" id="close">X</button> 
+        </header>
+
+<form id ="addPokemonForm">
+        <label for="name"><b>Name</b></label>
+        <input type="text" id= "name" required>
+    <br>
+
+        <label for="pokedexNumber">Pokédex Number</label>
+        <input type="number" id="pokedexNumber" name="pokedexNumber" required>
+    <br>
+    
+        <label for="type">Type</label>
+        <select name="type" id="type">
+            <option value="Normal">Normal</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Electric">Electric</option>
+            <option value="Grass">Grass</option>
+            <option value="Ice">Ice</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Poison">Poison</option>
+            <option value="Ground">Ground</option>
+            <option value="Flying">Flying</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Bug">Bug</option>
+            <option value="Rock">Rock</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Dark">Dark</option>
+            <option value="Steel">Steel</option>
+            <option value="Fairy">Fairy</option>
+        </select>
+    <br>
+
+        <label for="generation">Generation</label>
+        <input type="number" name="generation" id="generation" required>
+    <br>
+
+        <label for="level">Level</label>
+        <input type="number" name="level" id="level" required>
+    <br>
+
+        <label for="shiny">Shiny</label>
+        <input type="checkbox" name="shiny" id="shiny">
+    <br>
+
+        <label for="legendary">Legendary</label>
+        <input type="checkbox" name="legendary" id="legendary">
+    <br>
+
+        <div class="form-row">
+        <label for="file">Upload Pokémon Image</label>
+        <input type="file" id="file" name="file" accept="image/*" required>
+    </div>
+    
+    <button type ="submit">Add Pokémon</button>
+    <button type="reset"> Clear Info</button>
+
+</form>
+</dialog>
+</div>
+
+
+<script src="js/data.js"></script>
+
+</body>
+
+</html>

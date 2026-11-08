@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<title>About</title>
+
+</head>
+
+<body>
+        <p id="date"></p>
+    <nav>
+        <a href="index.html">Welcome</a>
+        <a href="data.html">Data Manipulation</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <h1>About This Website</h1>
+
+    <div class="about-container">
+
+        <div class="about-card">
+            <h2>About Me</h2>
+            <img src="images/me.png" alt="Photo of myself" width="150">
+            <div id="creatorinfo"></div>
+
+            <button id="countButton">Count My Pokémon</button>
+        <p id="pokemonCount"></p>
+        </div>
+        <div class="about-card">
+            <h2>About my Website</h2>
+            <p>This website allows users to create and manage their own Pokémon catalogue.</p>
+
+            <h3>JSON Array of Objects</h3>
+            <p>This Pokémon catalogue uses an array of objects. Each object represents one Pokémon and stores information about it.</p>
+            <p>Each Pokémon record contains:</p>
+            <ul>
+                <li>Name</li>
+                <li>Pokédex Number</li>
+                <li>Type</li>
+                <li>Generation</li>
+                <li>Level</li>
+                <li>Shiny Status</li>
+                <li>Legendary Status</li>
+                <li>Image</li>
+            </ul>
+
+            <p>I used Javascript to display Pokémon records, add new Pokémon and delete Pokémon. The records are saved in localStorage
+                so they still are available even when the page is reopened.
+            </p>
+        </div>
+    </div>
+
+<script src="js/about.js"></script>
+
+</body>
+</html>

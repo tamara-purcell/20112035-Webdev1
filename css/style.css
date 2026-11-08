@@ -1,0 +1,180 @@
+/* -----WELCOME PAGE----- */
+    .container{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            width: 100%;
+        }
+    body {
+        background-image: url("../images/background welcome.jpg");
+    }
+	p {
+	  font-size:1.5em;
+	  font-family:'Book Antiqua';
+	  text-align:center;
+      color: white;
+      text-shadow: 1px 1px 1px #000000;
+      background-color:  pink;
+        border-radius: 30px;
+     padding: 5px 5px;
+	}
+    
+    h1{
+        font-size:3em;
+	  font-family:'Book Antiqua';
+	  text-align:center;
+        color:white;
+        text-shadow: 2px 2px 2px rgb(96, 120, 176);
+        
+    }
+    
+    .welcome-gif{
+        display: block;
+        margin: auto;
+        width: 200px;
+    }
+    
+    
+    .welcome-gif-2{
+        position:fixed;
+        bottom: 10px;
+        right:10px;
+        width: 150px;
+    }
+
+    nav{
+        text-align:center;
+        margin-top: 20px;
+    }
+    nav a{
+        color:white;
+        text-decoration: underline;
+        font-size:1.5em;
+        margin: 0 10px;
+        text-shadow: 2px 2px 2px #000000;
+    }
+
+
+    nav a:hover{
+        color: hotpink;
+    }
+
+    button {
+        background-color: pink;
+        color: white;
+        border: 2px solid white;
+        border-radius: 25px;
+        font-size: 18px;
+        padding: 12px 25px;
+        margin: 15px auto;
+    }
+
+    form {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+/* -----DATA MANIPULATION PAGE----- */
+
+#container {
+    width: 90%;
+    margin: 2em auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid #e6b6d5;
+}
+
+th {
+    padding: 15px;
+    background-color: #f4a6d7;
+    color: white;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #fff0f7;
+}
+
+tr:hover {
+    background-color: #ffe0f0;
+}
+
+
+#container button {
+    padding: 10px 18px;
+    background-color: #f4a6d7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#container button:hover {
+    background-color: #e879b5;
+}
+
+
+dialog {
+    border: 2px solid #f4a6d7;
+    border-radius: 15px;
+    padding: 2em;
+    width: 400px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_title {
+    background-color: #f4a6d7;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+/* -----ABOUT PAGE----- */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.about-card {
+    background-color: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-card h2 {
+    text-align: center;
+}
+
+.about-card img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
